@@ -55,7 +55,7 @@ export const deleteTodo = createAsyncThunk(
     'todoSlice/delete',
     async (id) => {
         await axios.delete(`${api}/${id}`)
-        toast.info("todo has been removed")   
+        toast.info("todo has been deleted")   
         return id
     }
 )
